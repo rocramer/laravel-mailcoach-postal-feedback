@@ -4,6 +4,8 @@ namespace Rocramer\MailcoachPostalFeedback\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Event;
+use Rocramer\MailcoachPostalFeedback\ProcessPostalWebhookJob;
+use Rocramer\MailcoachPostalFeedback\Tests\factories\SendFactory;
 use Spatie\Mailcoach\Enums\SendFeedbackType;
 use Spatie\Mailcoach\Events\WebhookCallProcessedEvent;
 use Spatie\Mailcoach\Models\CampaignClick;
@@ -11,8 +13,6 @@ use Spatie\Mailcoach\Models\CampaignLink;
 use Spatie\Mailcoach\Models\CampaignOpen;
 use Spatie\Mailcoach\Models\Send;
 use Spatie\Mailcoach\Models\SendFeedbackItem;
-use Rocramer\MailcoachPostalFeedback\ProcessPostalWebhookJob;
-use Rocramer\MailcoachPostalFeedback\Tests\factories\SendFactory;
 use Spatie\WebhookClient\Models\WebhookCall;
 
 class ProcessPostalWebhookJobTest extends TestCase

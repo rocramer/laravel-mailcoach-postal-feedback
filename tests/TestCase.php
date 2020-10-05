@@ -6,10 +6,8 @@ use CreateMailCoachTables;
 use CreateWebhookCallsTable;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Mailcoach\MailcoachServiceProvider;
 use Rocramer\MailcoachPostalFeedback\MailcoachPostalFeedbackServiceProvider;
-use Rocramer\MailcoachPostalFeedback\PostalWebhookConfig;
-use Spatie\WebhookClient\Models\WebhookCall;
+use Spatie\Mailcoach\MailcoachServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -64,7 +62,6 @@ class TestCase extends Orchestra
     {
         return array_merge(
             $payloadContent,
-
         );
     }
 }
