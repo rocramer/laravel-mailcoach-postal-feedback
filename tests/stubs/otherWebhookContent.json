@@ -1,0 +1,25 @@
+{
+  "event": "MessageSent",
+  "timestamp": 1601910800.214777,
+  "payload": {
+    "message": {
+      "id": 339,
+      "token": "euEOoWtEXlUJ",
+      "direction": "outgoing",
+      "message_id": "3b1b3598-136a-43e9-b22b-8b35f5cb486f@rp.postal.example.de",
+      "to": "verlag@example.de",
+      "from": "support@awesome-app.de",
+      "subject": "Test",
+      "timestamp": 1601914439.861213,
+      "spam_status": "NotSpam",
+      "tag": null
+    },
+    "status": "Sent",
+    "details": "Message for verlag@example.de accepted by xyz.example.com (0.0.0.0.0)",
+    "output": "250 2.0.0 Ok: queued as 80F4E2E60093\n",
+    "sent_with_ssl": false,
+    "timestamp": 1601914440.6530714,
+    "time": 0.16
+  },
+  "uuid": "9a1e24f7-d382-4033-aabd-2ed71e3f0580"
+}

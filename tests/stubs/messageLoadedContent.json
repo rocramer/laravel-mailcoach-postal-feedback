@@ -1,0 +1,21 @@
+{
+  "event": "MessageLoaded",
+  "timestamp": 1601910800.214777,
+  "payload": {
+    "ip_address": "37.201.226.138",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Thunderbird/68.10.0",
+    "message": {
+      "id": 322,
+      "token": "WQ6eIR3GeAir",
+      "direction": "outgoing",
+      "message_id": "3b1b3598-136a-43e9-b22b-8b35f5cb486f@rp.postal.example.de",
+      "to": "mail@example.de",
+      "from": "newsletter@awesome-app.de",
+      "subject": "Test",
+      "timestamp": 1601904241.0791209,
+      "spam_status": "NotSpam",
+      "tag": null
+    }
+  },
+  "uuid": "9a1e24f7-d382-4033-aabd-2ed71e3f0580"
+}

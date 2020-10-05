@@ -1,0 +1,23 @@
+{
+  "event": "MessageLinkClicked",
+  "timestamp": 1601910800.214777,
+  "payload": {
+    "url": "https://www.example.de/blog/some-post",
+    "token": "jMXcH0FG",
+    "ip_address": "37.201.226.138",
+    "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0",
+    "message": {
+      "id": 336,
+      "token": "eJLQpf21TLll",
+      "direction": "outgoing",
+      "message_id": "3b1b3598-136a-43e9-b22b-8b35f5cb486f@rp.postal.example.de",
+      "to": "mail@example.de",
+      "from": "newsletter@example.de",
+      "subject": "Test 3",
+      "timestamp": 1601912310.892069,
+      "spam_status": "NotSpam",
+      "tag": null
+    }
+  },
+  "uuid": "9a1e24f7-d382-4033-aabd-2ed71e3f0580"
+}
