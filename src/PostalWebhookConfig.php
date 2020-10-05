@@ -14,7 +14,6 @@ class PostalWebhookConfig
 
         return new WebhookConfig([
             'name' => 'postal-feedback',
-            'signing_secret' => $config['signing_secret'] ?? '',
             'signature_header_name' => $config['signature_header_name'] ?? 'x-postal-signature',
             'signature_validator' => $config['signature_validator'] ?? PostalSignatureValidator::class,
             'webhook_profile' =>  $config['webhook_profile'] ?? ProcessEverythingWebhookProfile::class,

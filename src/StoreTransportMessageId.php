@@ -12,17 +12,14 @@ class StoreTransportMessageId
             return;
         }
 
-        if (! $event->message->getHeaders()->has('X-Mailgun-Message-ID')) {
+        if (! $event->message->getHeaders()->has('Postal-Message-ID')) {
             return;
         }
 
         /** @var \Spatie\Mailcoach\Models\Send $send */
         $send = $event->data['send'];
 
-        $transportMessageId = $event->message->getHeaders()->get('X-Mailgun-Message-ID')->getFieldBody();
-
-        $transportMessageId = ltrim($transportMessageId, '<');
-        $transportMessageId = rtrim($transportMessageId, '>');
+        $transportMessageId = $event->message->getHeaders()->get('Postal-Message-ID')->getFieldBody();
 
         $send->storeTransportMessageId($transportMessageId);
     }
