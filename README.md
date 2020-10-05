@@ -20,7 +20,7 @@ You need to configure an endpoint in your Postal dashboard and register your rou
 Route::postalFeedback('postal-feedback');
 ```
 
-Since Postal webhooks need to bypass Laravel's CSRF protection, be sure to list the URI as an exception in your VerifyCsrfToken middleware or list the route outside of the web middleware group:
+Since Postal webhooks need to bypass Laravel's CSRF protection, be sure to list the URI as an exception in your VerifyCsrfToken middleware or list the route outside the web middleware group:
 
 ```php
 protected $except = [
@@ -34,7 +34,7 @@ To verify the signature, add following to your `mailcoach.config`:
     'public_key' => env('POSTAL_PUBLIC_KEY'),
 ],
 ```
-Finally, add your public key in vor `.env` file.  You can get the public key by executing `postal default-dkim-record` on your Postal server and copy the `p` parameter (without the semicolon at the end).
+Finally, add your public key to the `.env` file.  You can get the public key by executing `postal default-dkim-record` on your Postal server and copy the `p` parameter (without the semicolon at the end).
 
 ## Documentation
 
