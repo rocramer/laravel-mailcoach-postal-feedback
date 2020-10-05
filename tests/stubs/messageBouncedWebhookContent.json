@@ -1,6 +1,6 @@
 {
   "event": "MessageBounced",
-  "timestamp": 1601910800.214777,
+  "timestamp": 1601910800.000000,
   "payload": {
     "original_message": {
       "id": 12345,

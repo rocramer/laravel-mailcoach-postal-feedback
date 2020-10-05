@@ -1,6 +1,6 @@
 {
   "event": "MessageSent",
-  "timestamp": 1601910800.214777,
+  "timestamp": 1601910800.000000,
   "payload": {
     "message": {
       "id": 339,

@@ -49,7 +49,7 @@ class ProcessPostalWebhookJobTest extends TestCase
 
         tap(SendFeedbackItem::first(), function (SendFeedbackItem $sendFeedbackItem) {
             $this->assertEquals(SendFeedbackType::BOUNCE, $sendFeedbackItem->type);
-            $this->assertEquals(Carbon::createFromTimestamp(1601910800.214777), $sendFeedbackItem->created_at);
+            $this->assertEquals(Carbon::createFromTimestamp(1601910800.000000), $sendFeedbackItem->created_at);
             $this->assertTrue($this->send->is($sendFeedbackItem->send));
         });
     }
@@ -64,7 +64,7 @@ class ProcessPostalWebhookJobTest extends TestCase
         $this->assertEquals('https://www.example.de/blog/some-post', CampaignLink::first()->url);
         $this->assertCount(1, CampaignLink::first()->clicks);
         tap(CampaignLink::first()->clicks->first(), function (CampaignClick $campaignClick) {
-            $this->assertEquals(Carbon::createFromTimestamp(1601910800.214777), $campaignClick->created_at);
+            $this->assertEquals(Carbon::createFromTimestamp(1601910800.000000), $campaignClick->created_at);
         });
     }
 
@@ -76,7 +76,7 @@ class ProcessPostalWebhookJobTest extends TestCase
 
         $this->assertCount(1, $this->send->campaign->opens);
         tap($this->send->campaign->opens->first(), function (CampaignOpen $campaignOpen) {
-            $this->assertEquals(Carbon::createFromTimestamp(1601910800.214777), $campaignOpen->created_at);
+            $this->assertEquals(Carbon::createFromTimestamp(1601910800.000000), $campaignOpen->created_at);
         });
     }
 

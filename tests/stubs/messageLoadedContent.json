@@ -1,6 +1,6 @@
 {
   "event": "MessageLoaded",
-  "timestamp": 1601910800.214777,
+  "timestamp": 1601910800.000000,
   "payload": {
     "ip_address": "37.201.226.138",
     "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Thunderbird/68.10.0",
