@@ -1,6 +1,10 @@
 name: run-tests
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 6 * * *'
 
 jobs:
   test:
@@ -8,13 +12,11 @@ jobs:
     strategy:
       matrix:
         php: [7.4]
-        laravel: [8.*, 7.*]
+        laravel: [8.*]
         dependency-version: [prefer-stable]
         include:
           -   laravel: 8.*
               testbench: 6.*
-          -   laravel: 7.*
-              testbench: 5.*
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
 

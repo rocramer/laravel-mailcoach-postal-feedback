@@ -2,6 +2,11 @@
 
 This is an unofficial package for [mailcoach.app](https://mailcoach.app/) that can process the feedback given by [Postal](https://github.com/postalhq/postal).
 
+## Requirements
+
+* Laravel 8.x
+* Mailcoach 3.x
+
 ## Setup
 
 The package can be installed via composer:
