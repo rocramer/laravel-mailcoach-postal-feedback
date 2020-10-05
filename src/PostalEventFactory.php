@@ -4,7 +4,6 @@ namespace Rocramer\MailcoachPostalFeedback;
 
 use Rocramer\MailcoachPostalFeedback\PostalEvents\BounceEvent;
 use Rocramer\MailcoachPostalFeedback\PostalEvents\ClickEvent;
-use Rocramer\MailcoachPostalFeedback\PostalEvents\ComplaintEvent;
 use Rocramer\MailcoachPostalFeedback\PostalEvents\OpenEvent;
 use Rocramer\MailcoachPostalFeedback\PostalEvents\OtherEvent;
 use Rocramer\MailcoachPostalFeedback\PostalEvents\PostalEvent;
@@ -13,7 +12,6 @@ class PostalEventFactory
 {
     protected static array $postalEvents = [
         ClickEvent::class,
-        ComplaintEvent::class,
         OpenEvent::class,
         BounceEvent::class,
     ];
