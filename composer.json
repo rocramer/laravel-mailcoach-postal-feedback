@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.4|^8.0",
         "illuminate/http": "^8.0",
         "spatie/laravel-mailcoach": "^3.0",
         "spatie/laravel-webhook-client": "^2.7",
