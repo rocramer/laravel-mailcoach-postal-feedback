@@ -1,3 +1,5 @@
+![run-tests](https://github.com/rocramer/laravel-mailcoach-postal-feedback/workflows/run-tests/badge.svg)
+
 # Process feedback for email campaigns sent using Postal
 
 This is an unofficial package for [mailcoach.app](https://mailcoach.app/) that can process the feedback given by [Postal](https://github.com/postalhq/postal).
