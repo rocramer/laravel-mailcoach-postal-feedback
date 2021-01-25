@@ -8,7 +8,7 @@ class BounceEvent extends PostalEvent
 {
     public function canHandlePayload(): bool
     {
-        if ($this->event !== 'MessageBounced') {
+        if ($this->event !== 'MessageBounced' || $this->event !== 'MessageDeliveryFailed') {
             return false;
         };
 
