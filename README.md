@@ -7,7 +7,7 @@ This is an unofficial package for [mailcoach.app](https://mailcoach.app/) that c
 ## Requirements
 
 * Laravel 8.x
-* Mailcoach 3.x
+* Mailcoach 4.x
 
 ## Setup
 
