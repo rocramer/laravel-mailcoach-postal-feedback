@@ -13,6 +13,7 @@ use Spatie\Mailcoach\Domain\Campaign\Models\CampaignLink;
 use Spatie\Mailcoach\Domain\Campaign\Models\CampaignOpen;
 use Spatie\Mailcoach\Domain\Shared\Models\Send;
 use Spatie\Mailcoach\Domain\Shared\Models\SendFeedbackItem;
+use Spatie\WebhookClient\Models\WebhookCall;
 
 class ProcessPostalWebhookJobTest extends TestCase
 {
