@@ -4,7 +4,7 @@ namespace Rocramer\MailcoachPostalFeedback\PostalEvents;
 
 use Carbon\Carbon;
 use DateTimeInterface;
-use Spatie\Mailcoach\Models\Send;
+use Spatie\Mailcoach\Domain\Shared\Models\Send;
 
 abstract class PostalEvent
 {

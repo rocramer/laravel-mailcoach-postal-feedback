@@ -2,7 +2,7 @@
 
 namespace Rocramer\MailcoachPostalFeedback\PostalEvents;
 
-use Spatie\Mailcoach\Models\Send;
+use Spatie\Mailcoach\Domain\Shared\Models\Send;
 
 class BounceEvent extends PostalEvent
 {

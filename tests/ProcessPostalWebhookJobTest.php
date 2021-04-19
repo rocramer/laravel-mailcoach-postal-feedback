@@ -4,16 +4,15 @@ namespace Rocramer\MailcoachPostalFeedback\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Event;
+use Spatie\Mailcoach\Database\Factories\SendFactory;
+use Spatie\Mailcoach\Domain\Campaign\Enums\SendFeedbackType;
+use Spatie\Mailcoach\Domain\Campaign\Events\WebhookCallProcessedEvent;
+use Spatie\Mailcoach\Domain\Campaign\Models\CampaignClick;
+use Spatie\Mailcoach\Domain\Campaign\Models\CampaignLink;
+use Spatie\Mailcoach\Domain\Campaign\Models\CampaignOpen;
+use Spatie\Mailcoach\Domain\Shared\Models\Send;
+use Spatie\Mailcoach\Domain\Shared\Models\SendFeedbackItem;
 use Rocramer\MailcoachPostalFeedback\ProcessPostalWebhookJob;
-use Rocramer\MailcoachPostalFeedback\Tests\factories\SendFactory;
-use Spatie\Mailcoach\Enums\SendFeedbackType;
-use Spatie\Mailcoach\Events\WebhookCallProcessedEvent;
-use Spatie\Mailcoach\Models\CampaignClick;
-use Spatie\Mailcoach\Models\CampaignLink;
-use Spatie\Mailcoach\Models\CampaignOpen;
-use Spatie\Mailcoach\Models\Send;
-use Spatie\Mailcoach\Models\SendFeedbackItem;
-use Spatie\WebhookClient\Models\WebhookCall;
 
 class ProcessPostalWebhookJobTest extends TestCase
 {
@@ -30,7 +29,7 @@ class ProcessPostalWebhookJobTest extends TestCase
             'payload' => $this->getStub('messageBouncedWebhookContent'),
         ]);
 
-        $this->send = (new SendFactory())->create([
+        $this->send = SendFactory::new()->create([
             'transport_message_id' => '3b1b3598-136a-43e9-b22b-8b35f5cb486f@rp.postal.example.de',
         ]);
 

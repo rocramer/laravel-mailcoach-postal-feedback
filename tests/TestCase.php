@@ -4,6 +4,8 @@ namespace Rocramer\MailcoachPostalFeedback\Tests;
 
 use CreateMailCoachTables;
 use CreateWebhookCallsTable;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Livewire\LivewireServiceProvider;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Rocramer\MailcoachPostalFeedback\MailcoachPostalFeedbackServiceProvider;
@@ -15,7 +17,9 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        $this->withFactories(__DIR__ . '/../vendor/spatie/laravel-mailcoach/database/factories');
+        Factory::guessFactoryNamesUsing(
+            fn (string $modelName) => 'Spatie\\Mailcoach\\Database\\Factories\\'.class_basename($modelName).'Factory'
+        );
 
         Route::mailcoach('mailcoach');
 
@@ -25,6 +29,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
+            LivewireServiceProvider::class,
             MailcoachServiceProvider::class,
             MailcoachPostalFeedbackServiceProvider::class,
         ];

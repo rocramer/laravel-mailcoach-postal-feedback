@@ -3,7 +3,7 @@
 namespace Rocramer\MailcoachPostalFeedback\PostalEvents;
 
 use Illuminate\Support\Arr;
-use Spatie\Mailcoach\Models\Send;
+use Spatie\Mailcoach\Domain\Shared\Models\Send;
 
 class ClickEvent extends PostalEvent
 {
