@@ -3,7 +3,6 @@
 namespace Rocramer\MailcoachPostalFeedback\Tests;
 
 use Illuminate\Mail\Events\MessageSent;
-use Rocramer\MailcoachPostalFeedback\Tests\factories\SendFactory;
 use Spatie\Mailcoach\Domain\Shared\Models\Send;
 use Swift_Message;
 
