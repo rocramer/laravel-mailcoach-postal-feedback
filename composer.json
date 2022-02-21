@@ -21,8 +21,8 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/http": "^8.0",
-        "spatie/laravel-mailcoach": "^4.0",
+        "illuminate/http": "^9.0",
+        "spatie/laravel-mailcoach": "^5.0",
         "ext-openssl": "*"
     },
     "require-dev": {

@@ -6,6 +6,13 @@ This is an unofficial package for [mailcoach.app](https://mailcoach.app/) that c
 
 ## Requirements
 
+For 3.0:
+
+* Laravel 9.x
+* Mailcoach 5.x
+
+For 2.0:
+
 * Laravel 8.x
 * Mailcoach 4.x
 
